@@ -162,8 +162,6 @@ section {
 }
 
 .header .logo-mobile img {
-  width: 150px;
-  margin: 0 40px;
   display: none;
 }
 
@@ -414,11 +412,12 @@ section {
 @media (max-width: 1279px) {
   .header{
     height: 5%;
+    display: flex;
   }
 
   .header .logo-mobile img {
-    margin-left: 50%;
-    display: block;
+    width: 150px;
+    display: inline-block;
   }
 
   .navbar {
@@ -494,7 +493,7 @@ section {
     line-height: 0;
     transition: 0.5s;
     z-index: 9999;
-    padding-right: 10px;
+    padding-right: 100px;
   }
 
   .mobile-nav-hide {
@@ -1597,17 +1596,23 @@ section {
 
 
 /* Ad-question */
-.ad-question .ad-content{
-  display: flex;
+
+@media  (min-width: 1280px) {
+  
+  .ad-question .ad-content{
+    display: flex;
+  }
+  
+  .ad-question .labels{
+    display: grid;
+    line-height: 1;
+    margin: 20px 0;
+    padding-right: 60px;
+    width: 100%;
+  }
 }
 
-.ad-question .labels{
-  display: grid;
-  line-height: 1;
-  margin: 20px 0;
-  padding-right: 60px;
-  width: 50%;
-}
+
 
 .ad-question .labels label{
   border-left: 3px solid #f7941d;
@@ -1814,9 +1819,21 @@ section {
 /*--------------------------------------------------------------
 # Test
 --------------------------------------------------------------*/
-.test{
-  margin-top: 90px;
+@media (min-width: 1280px) {
+  .test{
+    margin-top: 90px;
+    display: flex;
+  }
+
+  .test .test-left,
+  .test .test-right{
+    width: 50%;
+  }
+
+  
 }
+
+
 
 .test h3{
   color: #0054A6;
@@ -2820,11 +2837,31 @@ section {
 
 
 /* Class-english */
-.class-english .grid-container .video iframe{
-  margin: 20px;
+.class-english .grid-container .row .video iframe {
+  display: inline;
 }
 
 /* Slogan */
+
+@media (max-width: 1279px) {
+  .slogan h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slogan h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+
+
+
 .slogan{
   background-image: linear-gradient(to right, #0054A6, rgba(255, 255, 255, 0)), url(/assets/img/slogan.jpg);
   background-size: 100%;

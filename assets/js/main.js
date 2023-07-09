@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
       easing: 'slide',
       once: true,
       mirror: false
-    });s
+    });
   }
   window.addEventListener('load', () => {
     aos_init();
