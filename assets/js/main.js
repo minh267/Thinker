@@ -234,7 +234,7 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-btn1.onclick = function() {
+btn1.onclick = function() {  
   modal1.style.display = "block";
 }
 
@@ -259,4 +259,3 @@ window.onclick = function(event) {
     modal1.style.display = "none";
   }
 }
-

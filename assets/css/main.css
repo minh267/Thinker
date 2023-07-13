@@ -162,7 +162,7 @@ section {
 
 .header .logo img {
   width: 150px;
-  margin: 0 40px;
+  margin: 0;
 }
 
 .header .logo-mobile img {
@@ -175,6 +175,8 @@ section {
   color: #000;
   margin-bottom: 0;
 }
+
+
 
 
 
@@ -192,7 +194,7 @@ section {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    margin: 4px 2px;
+    margin: 4px 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
   }
@@ -1623,7 +1625,18 @@ section {
   }
 }
 
-
+/* //test/ */
+.home-demo .item {
+  background: #ff3f4d;
+}
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
 
 /* Ad-question */
 
@@ -2867,8 +2880,8 @@ section {
 
 
 /* Class-english */
-.class-english .grid-container .row .video iframe {
-  display: inline;
+.class-english .grid-container .row .video iframe{
+  display: inline-block;
 }
 
 /* Slogan */
@@ -2893,7 +2906,7 @@ section {
 
 
 .slogan{
-  background-image: linear-gradient(to right, #0054A6, rgba(255, 255, 255, 0)), url(/assets/img/slogan.jpg);
+  background-image: linear-gradient(to top, rgba(0, 84, 166, 1), rgba(0, 84, 166, 0.75), rgba(0, 84, 166, 0.5), rgba(0, 84, 166, 0.45), rgba(0, 84, 166, 0.4)), url(/assets/img/slogan.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center ;
@@ -2902,6 +2915,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 
 .slogan h1{
@@ -3024,6 +3038,9 @@ section {
   background-color: #f7941d;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -3032,7 +3049,7 @@ section {
   background: url("../img/footer-bg1.jpg") bottom center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 70px 0 60px 0;
   position: relative;
 }
 
