@@ -148,39 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   });
 
-/**
-   * Init swiper slider with 2 slides at once in desktop view
-   */
-new Swiper('.slides-3', {
-  speed: 600,
-  loop: true,
-  autoplay: {
-  delay: 5000,
-  disableOnInteraction: false
-  },
-  slidesPerView: 'auto',
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    0:{
-      slidesPerView: 1,
-    },
-    520:{
-      slidesPerView: 2,
-    },
-    950:{
-      slidesPerView: 3,
-    },
-},
-});
-
   /**
    * Initiate pURE cOUNTER
    */
@@ -292,3 +259,5 @@ window.onclick = function(event) {
     modal1.style.display = "none";
   }
 }
+
+
