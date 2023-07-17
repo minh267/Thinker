@@ -913,7 +913,7 @@ a:hover {
 }
 
 .constructions .card-item .card-body {
-  padding: 10px;
+  padding: 20px;
 }
 
 
@@ -1331,6 +1331,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -1549,8 +1550,7 @@ a:hover {
   width: 100%;
 }
 
-.team .silde-content,
-.team .silde-content1{
+.team .silde-content{
   margin: 0 40px;
   overflow: hidden;
   border-radius: 25px;
@@ -1937,6 +1937,12 @@ a:hover {
   
 }
 
+@media (max-width: 1279px) {
+  .test .test-left .php-email-form{
+    margin-left: 15px;
+  }
+}
+
 
 
 .test h3{
@@ -2101,6 +2107,15 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Slogan
+--------------------------------------------------------------*/
+.slogan{
+  height: 100vh;
+  background-position: center bottom;
+  background-image: url(/assets/img/slogan.jpg);
 }
 
 /*--------------------------------------------------------------
@@ -3212,6 +3227,12 @@ object-fit: cover;
   }
   .thinker img {
     margin: auto;
+  }
+} 
+
+@media (max-width: 1280px) {
+  .mission{
+    flex-direction: column;
   }
 } 
 
